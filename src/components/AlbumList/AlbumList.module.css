@@ -1,0 +1,133 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px
+}
+
+
+.top{
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.heading{
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgb(49, 39, 39);
+}
+
+.button{
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: transparent;
+    color: white;
+    transition: 0.5s;
+    font-weight: bolder;
+    font-size: large;
+    box-shadow: 0 0 5px #eee;
+    background-size: 200% auto;
+    text-align: center;
+}
+
+.add{ 
+    background-image: linear-gradient(to right,rgb(18, 71, 75) 0%,rgb(47, 85, 138) 51%, rgb(36, 95, 110) 100%);  
+}
+
+.button:hover{
+    background-position: right center;
+}
+
+.cancel{
+    background-image: linear-gradient(to right,rgb(214, 38, 38) 0%,rgb(202, 85, 85) 51%, rgb(175, 22, 22) 100%);
+}
+
+.albums{
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin: auto;
+    /* padding: 5px; */
+}
+
+.album{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid rgb(18, 107, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-content: center;
+    gap: 10px;
+    background:linear-gradient(to right, rgba(255, 255, 0, 0.43) ,rgba(255, 166, 0, 0.43));
+    box-shadow: 2px 0px 5px black;
+    filter:grayscale(75%);
+    filter: brightness(50%);
+}
+
+.album:hover{
+    box-shadow: 2px 2px 15px 5px rgba(192, 82, 19, 0.849);
+    border: 2px solid rgba(196, 124, 23, 0.832);
+    cursor: pointer;
+    filter: grayscale(0%);
+    filter: brightness(100%);
+}
+
+.album:hover .del{
+    border: 2px solid rgba(196, 23, 23, 0.832);
+    box-shadow: 1px 1px 10px rgb(189, 57, 57);
+    cursor:grab;
+    display: inline;
+}
+
+.image{
+    height: 50px;
+    width: 50px;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.del{
+    /* margin-top: 10px; */
+    background-color: rgb(202, 138, 138);
+    color: white;
+    border-radius: 15px;
+    display: none;
+}
+
+.spin{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: auto;
+    margin: auto;
+    height: auto;
+}
+/* For screens smaller than 600px (typical mobile screens) */
+@media only screen and (max-width: 600px) {
+    
+    .albums{
+        width: 100%;
+    }
+    .top{
+        width:100%;
+    }
+}

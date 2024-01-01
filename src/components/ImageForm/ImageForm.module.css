@@ -1,0 +1,93 @@
+
+
+.imageformdiv{
+    width:50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 2px solid maroon; */
+    border-radius: 10px;
+    margin: auto;
+    background:linear-gradient(to right, #547478,#4899a3,#547478);
+    /* gap: -10px; */
+    box-shadow: 2px 2px 10px #000000;
+    margin-top: 10px;
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttondiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details{
+    height: 2rem;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(205, 246, 232);
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    /* border: 2px solid rgb(40, 98, 155); */
+}
+
+.button{
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: transparent;
+    color: white;
+    transition: 0.5s;
+    font-weight: bolder;
+    font-size: large;
+    box-shadow: 0 0 5px #eee;
+    background-size: 200% auto;
+}
+
+.create{ 
+    background-image: linear-gradient(to right,rgb(21, 75, 18) 0%,rgb(47, 138, 70) 51%, rgb(36, 110, 36) 100%);  
+}
+
+.button:hover{
+    background-position: right center;
+}
+
+.clear{
+    background-image: linear-gradient(to right,rgb(214, 38, 38) 0%,rgb(202, 85, 85) 51%, rgb(175, 22, 22) 100%);
+}
+
+
+.heading{
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+/* For screens smaller than 600px (typical mobile screens) */
+@media only screen and (max-width: 600px) {
+    
+    .imageformdiv{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+    }
+}
